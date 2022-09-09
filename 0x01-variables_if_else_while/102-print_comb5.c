@@ -37,7 +37,7 @@ int main(void)
 		p++;
 		q = 48;
 		y = p;
-		x = q+ 1;
+		x = q + 1;
 	}
 	putchar('\n');
 	return (0);
