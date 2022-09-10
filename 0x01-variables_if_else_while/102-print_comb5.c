@@ -6,39 +6,39 @@
  */
 int main(void)
 {
-	int i = 48;
+	int i = 48, j = 48, k = 48, l = 49;
 
 	while (i < 58)
 	{
-		int j = 48;
-
 		while (j < 58)
 		{
-			int k = 48;
-
 			while (k < 58)
 			{
-				int l = 48;
-
 				while (l < 58)
 				{
-					if (i != k && j != l)
+					putchar(i);
+					putchar(j);
+					putchar(' ');
+					putchar(k);
+					putchar(l);
+					if (i != 57 && j != 56 && k != 57 && l != 57)
 					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(l);
 						putchar(',');
 						putchar(' ');
 					}
 					l++;
 				}
 				k++;
+				l = 48;
 			}
 			j++;
+			j = i;
+			l = j + 1;
 		}
 		i++;
+		j = 48;
+		k = i;
+		l = j + 1;
 	}
 	putchar('\n');
 	return (0);
