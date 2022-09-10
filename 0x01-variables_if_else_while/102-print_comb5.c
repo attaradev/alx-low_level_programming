@@ -6,43 +6,25 @@
  */
 int main(void)
 {
-	int i, j, x, y;
+	int digit1, digit2;
 
-	i = 48;
-	j = 48;
-	x = 48;
-	y = 49;
-	while (i < 58)
+	for (digit1 = 0; digit1 <= 98; digit1++)
 	{
-		while (j < 58)
+		for (digit2 = digit1 + 1; digit2 <= 99; digit2++)
 		{
-			while (x < 58)
+			putchar((digit1 / 10) + '0');
+			putchar((digit1 % 10) + '0');
+			putchar(32);
+			putchar((digit2 / 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 / 10 != 9 || digit1 % 10 != 8)
 			{
-				while (y < 58)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(x);
-					putchar(y);
-					if (!(i == 57 && x == 56 && x == 57 && y == 57))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					y++;
-				}
-				x++;
-				y = 48;
+				putchar(44);
+				putchar(32);
 			}
-			j++;
-			x = 48;
-			y = j + 1;
 		}
-		i++;
-		x = i;
-		y = j + 1;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
