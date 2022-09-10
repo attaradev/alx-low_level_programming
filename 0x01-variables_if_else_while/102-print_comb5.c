@@ -7,11 +7,11 @@
 int main(void)
 {
 	int i, j, x, y;
+	
 	i = 48;
 	j = 48;
 	x = 48;
 	y = 49;
-
 	while (i < 58)
 	{
 		while (j < 58)
@@ -25,11 +25,8 @@ int main(void)
 					putchar(' ');
 					putchar(x);
 					putchar(y);
-					if (i != 57 && j != 56 && x != 57 && y != 57)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 					y++;
 				}
 				x++;
