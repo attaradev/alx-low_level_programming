@@ -6,38 +6,36 @@
  */
 int main(void)
 {
-	int p = 48, q = 48, y = 48, x = 49;
+	int i = 48;
 
-	while (p <= 57)
+	while (i < 58)
 	{
-		while (q <= 57)
+		int j = 48;
+		while (j < 58)
 		{
-			while (y <= 57)
+			int k = i;
+			while (k < 58)
 			{
-				while (x <= 57)
-				{																								putchar(p);
-					putchar(q);
-					putchar(' ');
-					putchar(y);
-					putchar(x);
-					if (!(p == 57 && q == 56 && y == 57 && x == 57))
+				int l = j + 1;
+				while (l < 58)
+				{
+					if (!(i == 57 && j == 57))
 					{
+						putchar(i);
+						putchar(j);
+						putchar(' ');
+						putchar(k);
+						putchar(l);
 						putchar(',');
 						putchar(' ');
 					}
-					x++;
+					l++;
 				}
-				y++;
-				x = 48;
+				k++;
 			}
-			q++;
-			q = p;
-			x = q + 1;
+			j++;
 		}
-		p++;
-		q = 48;
-		y = p;
-		x = q + 1;
+		i++;
 	}
 	putchar('\n');
 	return (0);
