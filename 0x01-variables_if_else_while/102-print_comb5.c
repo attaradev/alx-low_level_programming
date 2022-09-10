@@ -18,11 +18,11 @@ int main(void)
 
 			while (k < 58)
 			{
-				int l = j + 1;
-				
+				int l = j;
+
 				while (l < 58)
 				{
-					if (!(i == 57 && j == 57))
+					if (!(i == 57 && j == 57) || !(k == 48 && l == 48))
 					{
 						putchar(i);
 						putchar(j);
