@@ -11,12 +11,15 @@ int main(void)
 	while (i < 58)
 	{
 		int j = 48;
+
 		while (j < 58)
 		{
 			int k = i;
+
 			while (k < 58)
 			{
 				int l = j + 1;
+				
 				while (l < 58)
 				{
 					if (!(i == 57 && j == 57))
