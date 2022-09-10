@@ -40,7 +40,8 @@ int main(void)
 			y = j + 1;
 		}
 		i++;
-		j = 48;
+		x = i;
+		y = j + 1;
 	}
 	putchar('\n');
 	return (0);
