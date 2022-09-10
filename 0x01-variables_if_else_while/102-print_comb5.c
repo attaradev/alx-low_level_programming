@@ -6,7 +6,11 @@
  */
 int main(void)
 {
-	int i = 48, j = 48, k = 48, l = 49;
+	int i, j, x, y;
+	i = 48;
+	j = 48;
+	x = 48;
+	y = 49;
 
 	while (i < 58)
 	{
@@ -19,26 +23,23 @@ int main(void)
 					putchar(i);
 					putchar(j);
 					putchar(' ');
-					putchar(k);
-					putchar(l);
-					if (i != 57 && j != 56 && k != 57 && l != 57)
+					putchar(x);
+					putchar(y);
+					if (i != 57 && j != 56 && x != 57 && y != 57)
 					{
 						putchar(',');
 						putchar(' ');
 					}
-					l++;
+					y++;
 				}
-				k++;
-				l = 48;
+				x++;
+				y = 48;
 			}
 			j++;
-			j = i;
-			l = j + 1;
+			x = 48;
 		}
 		i++;
 		j = 48;
-		k = i;
-		l = j + 1;
 	}
 	putchar('\n');
 	return (0);
