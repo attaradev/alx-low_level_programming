@@ -22,7 +22,7 @@ int main(void)
 
 				while (l < 58)
 				{
-					if (!(i == k && j == l))
+					if (i != k && j != l)
 					{
 						putchar(i);
 						putchar(j);
