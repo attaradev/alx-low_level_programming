@@ -34,7 +34,7 @@ int main(void)
 			}
 			j++;
 			x = 48;
-			y = j;
+			y = j + 1;
 		}
 		i++;
 		j = 48;
