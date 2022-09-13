@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * print_alphabets - prints alphabets
+ * print_alphabet - print alphabets
  * Return: void
  */
-void print_alphabets(void)
+void print_alphabet(void)
 {
 	for (char c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
 	}
+	putchar('\n');
 }
 
 /**
@@ -19,6 +20,5 @@ void print_alphabets(void)
 int main(void)
 {
 	print_alphabets();
-	putchar('\n');
 	return 0;
 }
