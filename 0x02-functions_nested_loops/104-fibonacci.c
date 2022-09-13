@@ -8,12 +8,10 @@
 int main(void)
 {
 	int i;
-	unsigned long x, y, z;
+	unsigned long x = 0, y = 1, z;
 	unsigned long ax, bx, ay, by;
 	unsigned long a, b;
 
-	x = 0;
-	y = 1;
 	for (i = 0; i < 92; i++)
 	{
 		z = x + y;
@@ -46,6 +44,5 @@ int main(void)
 	}
 
 	printf("\n");
-
 	return (0);
 }
