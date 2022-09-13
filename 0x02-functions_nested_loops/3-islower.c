@@ -12,6 +12,6 @@ int _islower(int c)
 {
 	int result;
 
-	result = (c >= 'a' && c <= 'z') ? 0 : 1;
+	result = (c >= 'a' && c <= 'z') ? 1 : 0;
 	return (result);
 }
