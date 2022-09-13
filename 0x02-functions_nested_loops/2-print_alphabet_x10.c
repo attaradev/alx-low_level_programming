@@ -6,10 +6,17 @@
  */
 void print_alphabets_x10(void)
 {
-	int i;
+	int count;
 
-	for (i = 0; i < 10; i++)
+	count = 10;
+	while (count > 0)
 	{
-		print_alphabet();
+		int i;
+
+		for (i = 0; i < 10; i++)
+		{
+			print_alphabet();
+		}
+		count--;
 	}
 }
