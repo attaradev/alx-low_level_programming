@@ -10,6 +10,7 @@ void jack_bauer(void);
 void times_table(void);
 int print_sign(int n);
 int print_last_digit(int n);
+void print_to_98(int n);
 int add(int a, int b);
 int _putchar(char c);
 int _islower(int c);
