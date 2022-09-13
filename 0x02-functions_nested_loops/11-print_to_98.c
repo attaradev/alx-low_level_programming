@@ -19,9 +19,7 @@ void print(int i)
 /**
  * print_to_98 - print natural numbers from n to 98,
  * followed by a new line
- *
  * @n: number to start counting from
- *
  * Return: void
  */
 void print_to_98(int n)

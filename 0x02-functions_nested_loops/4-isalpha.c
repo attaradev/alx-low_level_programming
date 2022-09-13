@@ -3,9 +3,7 @@
 
 /**
  * _isalpha - checks for alpha character
- *
  * @c: character to check
- *
  * Return: 1 or 0
  */
 int _isalpha(int c)

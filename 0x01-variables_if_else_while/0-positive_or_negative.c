@@ -4,8 +4,8 @@
 
 /**
  * main - print the number stored in the variable n
- *        as positive or negative
- * Return: Always 0 (Success)
+ * as positive or negative
+ * Return: 0
  */
 int main(void)
 {

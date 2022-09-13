@@ -2,10 +2,8 @@
 /**
  * print_times_table - prints the times table with
  * parameter
- *
  * @n: parameter
- *
- *Return: void
+ * Return: void
  */
 void print_times_table(int n)
 {
@@ -42,6 +40,7 @@ void print_times_table(int n)
 				}
 				_putchar('0' + (result % 10));
 			}
+
 			_putchar('\n');
 		}
 	}

@@ -2,7 +2,7 @@
 
 /**
  * main - prints the alphabet in lowercase, and then in uppercase,
- *        followed by a new line
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -13,10 +13,13 @@ int main(void)
 	{
 		putchar(i);
 	}
+
 	for (j = 'A'; j <= 'Z'; j++)
 	{
 		putchar(j);
 	}
+
 	putchar('\n');
+
 	return (0);
 }

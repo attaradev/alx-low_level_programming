@@ -3,7 +3,6 @@
 /**
  * main - prints out first 50
  * fibonacci suit numbers
- *
  * Return: Always 0
  */
 int main(void)
@@ -13,6 +12,7 @@ int main(void)
 
 	x = 0;
 	y = 1;
+
 	for (i = 0; i < 50; i++)
 	{
 		unsigned long sum;
