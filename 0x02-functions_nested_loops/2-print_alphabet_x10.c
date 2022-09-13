@@ -4,7 +4,7 @@
  * print_alphabets_x10 - print alphabets 10 times
  * Return: void
  */
-void print_alphabets_x10(void)
+void print_alphabet_x10(void)
 {
 	int count;
 
