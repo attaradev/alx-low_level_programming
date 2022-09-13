@@ -9,16 +9,18 @@
 int main(void)
 {
 	int i;
-	unsigned long x, y, z;
+	unsigned long x, y;
 
 	x = 0;
 	y = 1;
 	for (i = 0; i < 50; i++)
 	{
-		z = x + y;
-		printf("%lu", z);
+		unsigned long sum;
+
+		sum = x + y;
 		x = y;
-		y = z;
+		y = sum;
+		printf("%lu", sum);
 
 		if (i == 49)
 			printf("\n");
