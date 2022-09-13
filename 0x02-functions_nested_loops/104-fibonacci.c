@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints out first 98
- * fibonacci suit numbers
+ * main - print first 98 fibonacci numbers
  *
  * Return: Always 0
  */
