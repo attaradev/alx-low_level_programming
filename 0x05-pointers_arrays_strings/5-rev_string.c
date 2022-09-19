@@ -29,6 +29,6 @@ void rev_string(char *s)
 	while (s[len] != '\n')
 		len++;
 
-	for (i = len; i >= 0; i--)
+	for (i = 0; i <= ((len + 1) / 2); i++)
 		swap_char(s + i, s + (len - i));
 }
