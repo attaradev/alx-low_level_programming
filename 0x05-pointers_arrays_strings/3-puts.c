@@ -2,18 +2,13 @@
 
 /**
  * _puts - print string to stdout
- * @s: string
+ * @str: string
  * Return: void
  */
 void _puts(char *str)
 {
-	int i;
+	while(*str)
+		_putchar(*str);
 
-	i = 0;
-
-	while(s[i] != '\0')
-	{
-		_putchar(s[i]);
-		i++;
-	}
+	_putchar('\n');
 }
