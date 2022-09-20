@@ -10,7 +10,7 @@
 int main(void)
 {
 	char c;
-	int = x;
+	int x;
 
 	srand(time(0));
 
