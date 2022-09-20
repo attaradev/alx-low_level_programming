@@ -22,13 +22,20 @@ void swap_char(char *a, char *b)
  */
 void rev_string(char *s)
 {
-	int len, i;
+	int len, x, y;
 
 	len = 0;
 
 	while (s[len] != '\n')
 		len++;
 
-	for (i = 0; i < ((len - 1) / 2); i++)
-		swap_char(s + i, s + (len - i));
+	x = len - 1;
+	y = 0;
+
+	while (x > y)
+	{
+		swap_char(s + x, s + y);
+		x--;
+		y++;
+	}
 }
