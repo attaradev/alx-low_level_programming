@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - change lowercase letters to uppercase
- * @str: string
+ * @str: string parameter
  * Return: string
  */
 char *string_toupper(char *str)
@@ -13,8 +13,10 @@ char *string_toupper(char *str)
 	i = 0;
 
 	while (str[i++])
+	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] -= 32;
+	}
 
 	return (str);
 }
