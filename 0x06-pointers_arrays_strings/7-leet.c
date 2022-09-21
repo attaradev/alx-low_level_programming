@@ -8,11 +8,19 @@
 char *leet(char *str)
 {
 	int x, y;
-	char leet[8] = {'O','L', '?', 'E', 'A', '?', '?', 'T'};
-
+	char leet[8];
+       
+	leet[0] = 'O';
+	leet[1] = 'L';
+	leet[2] = '?';
+	leet[3] = 'E';
+	leet[4] = 'A';
+	leet[5] = '?';
+	leet[6] = '?';
+	leet[7] = 'T';
 	x = 0;
 
-	while (str[x++])
+	while (str[++x])
 	{
 		for (y = 0; y < 8; y++)
 		{
