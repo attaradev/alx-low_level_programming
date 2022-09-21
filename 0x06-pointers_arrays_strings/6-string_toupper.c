@@ -3,25 +3,23 @@
 
 /**
  * string_toupper - change lowercase letters to uppercase
- * @s: string
+ * @str: string
  * Return: string
  */
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
 	int i;
 
 	i = 0;
 
-	while (s[i] != '\0')
+	while (str[i++])
 	{
 		char c;
 
 		c = s[i];
 		if (c >= 'a' && c <= 'z')
 			s[i] -= 32;
-
-		i++;
 	}
 
-	return (s);
+	return (str);
 }
