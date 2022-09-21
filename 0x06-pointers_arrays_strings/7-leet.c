@@ -11,7 +11,7 @@ char *leet(char *str)
 	char leet[5][2] = {{'A', '4'}, {'E', '3'}, {'O', '0'}, {'T', '7'}, {'L', '1'}};
 
 	x = 0;
-
+	
 	while (str[++x])
 	{
 		for (y = 0; y < 8; y++)
@@ -20,6 +20,6 @@ char *leet(char *str)
 				str[x] = leet[y][1];
 		}
 	}
-
+	
 	return (str);
 }
