@@ -8,7 +8,7 @@
 
 char *rot13(char *str)
 {
-  int x, y;
+  int x;
 
   char rot[52][2] = {{'A', 'N'},
                      {'B', 'O'},
@@ -63,8 +63,12 @@ char *rot13(char *str)
                      {'y', 'l'},
                      {'z', 'm'}};
 
-  while (str[++x])
+  x = 0;
+
+  while (str[x])
   {
+    int y;
+
     for (y = 0; y < 52; y++)
     {
       if (str[x] == rot[y][0])
@@ -73,6 +77,7 @@ char *rot13(char *str)
         break;
       }
     }
+    x++;
   }
   return (str);
 }
