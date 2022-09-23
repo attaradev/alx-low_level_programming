@@ -5,23 +5,22 @@
  * @str: string
  * Return: encoded string
  */
-
 char *rot13(char *str)
 {
-	int x;
-	char rot[52][2] = {{'A', 'N'},
-		{'B', 'O'},
-		{'C', 'P'},
-		{'D', 'Q'},
-		{'E', 'R'},
-		{'F', 'S'},
-		{'G', 'T'},
-		{'H', 'U'},
-                {'I', 'V'},
-                {'J', 'W'},
-                {'K', 'X'},
-                {'L', 'Y'},
-		{'M', 'Z'},
+  int x;
+  char rot[52][2] = {{'A', 'N'},
+                     {'B', 'O'},
+                     {'C', 'P'},
+                     {'D', 'Q'},
+                     {'E', 'R'},
+                     {'F', 'S'},
+                     {'G', 'T'},
+                     {'H', 'U'},
+                     {'I', 'V'},
+                     {'J', 'W'},
+                     {'K', 'X'},
+                     {'L', 'Y'},
+                     {'M', 'Z'},
                      {'N', 'A'},
                      {'O', 'B'},
                      {'P', 'C'},
@@ -61,23 +60,23 @@ char *rot13(char *str)
                      {'x', 'k'},
                      {'y', 'l'},
                      {'z', 'm'}};
-	
-	x = 0;
-	
-	while (str[x]z)
-	{
-		int y;
-		
-		for (y = 0; y < 52; y++)
-		{
-			if (str[x] == rot[y][0])
-			{
-				str[x] = rot[y][1];
-				break;
-			}
-		}
-		
-		x++;
+
+  x = 0;
+
+  while (str[x])
+  {
+    int y;
+
+    for (y = 0; y < 52; y++)
+    {
+      if (str[x] == rot[y][0])
+      {
+        str[x] = rot[y][1];
+        break;
+      }
+    }
+
+    x++;
   }
   return (str);
 }
