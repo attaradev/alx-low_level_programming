@@ -1,58 +1,5 @@
 #include "main.h"
 
-char rot[52][2] = {{'A', 'N'},
-				   {'B', 'O'},
-				   {'C', 'P'},
-				   {'D', 'Q'},
-				   {'E', 'R'},
-				   {'F', 'S'},
-				   {'G', 'T'},
-				   {'H', 'U'},
-				   {'I', 'V'},
-				   {'J', 'W'},
-				   {'K', 'X'},
-				   {'L', 'Y'},
-				   {'M', 'Z'},
-				   {'N', 'A'},
-				   {'O', 'B'},
-				   {'P', 'C'},
-				   {'Q', 'D'},
-				   {'R', 'E'},
-				   {'S', 'F'},
-				   {'T', 'G'},
-				   {'U', 'H'},
-				   {'V', 'I'},
-				   {'W', 'J'},
-				   {'X', 'K'},
-				   {'Y', 'L'},
-				   {'Z', 'M'},
-				   {'a', 'n'},
-				   {'b', 'o'},
-				   {'c', 'p'},
-				   {'d', 'q'},
-				   {'e', 'r'},
-				   {'f', 's'},
-				   {'g', 't'},
-				   {'h', 'u'},
-				   {'i', 'v'},
-				   {'j', 'w'},
-				   {'k', 'x'},
-				   {'l', 'y'},
-				   {'m', 'z'},
-				   {'n', 'a'},
-				   {'o', 'b'},
-				   {'p', 'c'},
-				   {'q', 'd'},
-				   {'r', 'e'},
-				   {'s', 'f'},
-				   {'t', 'g'},
-				   {'u', 'h'},
-				   {'v', 'i'},
-				   {'w', 'j'},
-				   {'x', 'k'},
-				   {'y', 'l'},
-				   {'z', 'm'}};
-
 /**
  * rot13 - encodes a string using rot13
  * @str: string
@@ -60,19 +7,19 @@ char rot[52][2] = {{'A', 'N'},
  */
 char *rot13(char *str)
 {
-	int x;
+	char alph[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	int x = 0;
 
-	x = 0;
-
-	while (str[x] != '\0')
+	while (str[x])
 	{
 		int y;
 
 		for (y = 0; y < 52; y++)
 		{
-			if (str[x] == rot[y][0])
+			if (str[x] == alph[y])
 			{
-				str[x] = rot[y][1];
+				str[x] = rot[y];
 				break;
 			}
 		}
