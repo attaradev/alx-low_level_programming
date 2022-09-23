@@ -63,7 +63,7 @@ char *rot13(char *str)
 
   x = 0;
 
-  while (str[x])
+  while (str[x] != '\0')
   {
     int y;
 
