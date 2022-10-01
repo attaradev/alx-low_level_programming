@@ -5,12 +5,11 @@
 /**
  * main - prints the minimum number of coins to
  * make change for an amount of money
- * @argc: The arguements' counter
- * @argv: The argument's values
+ * @argc: arguements' counter
+ * @argv: argument's values
  * Return: 1 if the number of arguments passed is not exactly
  * or 0 in otherwise
  */
-
 int main(int argc, char **argv)
 {
 	int amount, coins = 0;

@@ -7,7 +7,6 @@
  * @argv: an array of commands pass
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
 	int product;

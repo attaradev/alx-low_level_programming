@@ -9,7 +9,6 @@
  * Return: 0 if it's a number
  * 1 if it's not a number
  */
-
 int isNum(char num[])
 {
 	int i, l = strlen(num);
