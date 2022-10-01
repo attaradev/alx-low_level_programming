@@ -1,3 +1,9 @@
+/**
+ * File: main.h
+ * Author: Mike Attara
+ * Desc: Header file for function declarations
+ */
+
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
@@ -22,4 +28,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif/* HEADER_FILE*/
+#endif /* HEADER_FILE*/
