@@ -4,7 +4,6 @@
  * main - print number of arguments supplied
  * @argc: argc
  * @argv: argv
- *
  * Return: 0
  */
 

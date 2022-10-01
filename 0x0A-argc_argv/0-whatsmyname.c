@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function to print the name of the programme
- *
+ * main - print the name of the programme
  * Return: 0
  */
 

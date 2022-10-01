@@ -5,7 +5,6 @@
  * main - print the product of two numbers supplied as commands
  * @argc: the number of arguments pass
  * @argv: an array of commands pass
- *
  * Return: 0
  */
 

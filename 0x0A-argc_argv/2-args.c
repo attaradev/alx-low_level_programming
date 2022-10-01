@@ -4,7 +4,6 @@
  * main - print the number of commands supplied
  * @argc: computes for the number of commands supplied
  * @argv: an array commands
- *
  * Return: 0
  */
 

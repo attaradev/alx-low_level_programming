@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main - A proogram that prints the minimum number of coins to
+ * main - prints the minimum number of coins to
  * make change for an amount of money
  * @argc: The arguements' counter
  * @argv: The argument's values
