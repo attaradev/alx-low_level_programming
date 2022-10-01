@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - print the name of the programme
+ * main - print the name of the program
  * Return: 0
  */
 int main(int argc, char *argv[])
