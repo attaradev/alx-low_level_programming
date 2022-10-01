@@ -6,8 +6,7 @@
 /**
  * isNum - check if string array is num
  * @num: string to check
- * Return: 0 if it's a number
- * 1 if it's not a number
+ * Return: 0 if it's a number or 1
  */
 int isNum(char num[])
 {
@@ -23,8 +22,8 @@ int isNum(char num[])
 }
 
 /**
- * main - a program that adds positive numbers
- * @argc: holds the number of arguments passed
+ * main - adds positive numbers
+ * @argc: number of arguments passed
  * @argv: array pointer that holds the arguments passed
  * Return: 0
  */
@@ -33,23 +32,16 @@ int main(int argc, char *argv[])
 	int i, sum;
 
 	if (argc == 1)
-	{
 		printf("0\n");
-	}
-
 	else
 	{
 		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
 			if (isNum(argv[i]) == 0)
-			{
 				sum += atoi(argv[i]);
-			}
 			else
-			{
 				printf("Error\n");
-			}
 		}
 		printf("%d\n", sum);
 	}
