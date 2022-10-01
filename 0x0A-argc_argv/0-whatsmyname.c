@@ -6,9 +6,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int j = argc - argc;
-
-	printf("%s\n", argv[j]);
+	printf("%s\n", argv[argc - argc]);
 
 	return (0);
 }
