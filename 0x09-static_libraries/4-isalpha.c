@@ -1,15 +1,15 @@
-#include "main.h"
+#include <stdio.h>
+#include <ctype.h>
 
 /**
- * _isalpha - Entry point for programme
- *
- * @c: Character to check
- *
- * Description: Checks for alphabetic characters
- *
- * Return: Returns 0 or 1
+ * _isalpha - checks for alpha character
+ * @c: character to check
+ * Return: 1 or 0
  */
 int _isalpha(int c)
 {
-	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (1);
+
+	return (0);
 }
