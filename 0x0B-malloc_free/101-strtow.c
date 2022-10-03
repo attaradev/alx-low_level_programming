@@ -53,7 +53,6 @@ char **strtow(char *str)
 
 	if (words == 0)
 		return (NULL);
-
 	split = (char **)malloc(sizeof(char *) * (words + 1));
 	if (split != NULL)
 	{
@@ -86,7 +85,6 @@ char **strtow(char *str)
 			}
 		}
 		split[words] = NULL;
-
 		return (split);
 	}
 	else
