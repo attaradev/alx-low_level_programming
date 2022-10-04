@@ -51,7 +51,7 @@ char **strtow(char *str)
 	char **words;
 	int i, j = 0, temp = 0, size = 0, num_word = word_count(str);
 
-	if (num_word == 0 || str == ' ')
+	if (num_word == 0 || str == " ")
 		return (NULL);
 	words = (char **)malloc(sizeof(char *) * (num_word + 1));
 	if (words != NULL)
