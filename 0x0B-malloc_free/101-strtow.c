@@ -3,28 +3,27 @@
 
 /**
  * length - calculate length of string
- * @str: string to be counted
+ * @str: string
  * Return: length of the string
  */
 int length(char *str)
 {
-	int i = 0;
+	int len = 0;
 
-	while (str[i])
-		i++;
+	while (str[len])
+		len++;
 
-	return (i);
+	return (len);
 }
 
 /**
- * count_words - counts the number of words in string
+ * word_count - counts the number of words in string
  * @str: string
  * Return: number of words
  */
-int count_words(char *str)
+int word_count(char *str)
 {
-	int i = 0;
-	int words = 0;
+	int i = 0, words = 0;
 
 	while (i <= length(str))
 	{
@@ -49,45 +48,43 @@ int count_words(char *str)
  */
 char **strtow(char *str)
 {
-	char **split;
-	int i, j = 0, temp = 0, size = 0, num_words = count_words(str);
+	char **words;
+	int i, j = 0, temp = 0, size = 0, num_word = word_count(str);
 
-	if (num_words == 0)
+	if (num_word == 0)
 		return (NULL);
-
-	split = (char **)malloc(sizeof(char *) * (num_words + 1));
-	if (split != NULL)
+	words = (char **)malloc(sizeof(char *) * (num_word + 1));
+	if (words != NULL)
 	{
-		for (i = 0; i <= length(str) && num_words; i++)
+		for (i = 0; i <= len(str) && num_word; i++)
 		{
 			if ((str[i] != ' ') && (str[i] != '\0'))
 				size++;
 			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 			{
-				split[j] = (char *)malloc(sizeof(char) * size + 1);
-				if (split[j] != NULL)
+				words[j] = (char *)malloc(sizeof(char) * size + 1);
+				if (words[j] != NULL)
 				{
 					while (temp < size)
 					{
-						split[j][temp] = str[(i - size) + temp];
+						words[j][temp] = str[(i - size) + temp];
 						temp++;
 					}
-					split[j][temp] = '\0';
+					words[j][temp] = '\0';
 					size = temp = 0;
 					j++;
 				}
 				else
 				{
 					while (j-- >= 0)
-						free(split[j]);
-					free(split);
-
+						free(words[j]);
+					free(words);
 					return (NULL);
 				}
 			}
 		}
-		split[num_words] = NULL;
-		return (split);
+		words[num_word] = NULL;
+		return (words);
 	}
 	else
 		return (NULL);
