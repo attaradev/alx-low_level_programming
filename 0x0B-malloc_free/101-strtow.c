@@ -56,7 +56,7 @@ char **strtow(char *str)
 	words = (char **)malloc(sizeof(char *) * (num_word + 1));
 	if (words != NULL)
 	{
-		for (i = 0; i <= len(str) && num_word; i++)
+		for (i = 0; i <= length(str) && num_word; i++)
 		{
 			if ((str[i] != ' ') && (str[i] != '\0'))
 				size++;
