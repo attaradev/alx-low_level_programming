@@ -43,16 +43,6 @@ int count_words(char *str)
 }
 
 /**
- * store_word - store string in memory
- * @str: word
- * @ptr: starting memory address
- * Return: pointer to the string
- */
-char *store_word(char *str)
-{
-}
-
-/**
  * strtow - splits a string into words
  * @str: string
  * Return: pointer to the array of splitted words
