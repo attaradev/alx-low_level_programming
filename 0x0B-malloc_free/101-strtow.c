@@ -17,28 +17,39 @@ int length(char *str)
 }
 
 /**
- * num_words - counts the number of words in string
+ * count_words - counts the number of words in string
  * @str: string
  * Return: number of words
  */
-int num_words(char *str)
+int count_words(char *str)
 {
-	int i = 0, words = 0;
+	int i = 0;
+	int words = 0;
 
 	while (i <= length(str))
 	{
 		if ((str[i] != ' ') && (str[i] != '\0'))
-			i++;
-		else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
+			++i;
+		else if (((str[i] == ' ') || (str[i] == '\0')) && (str[i - 1] != ' '))
 		{
-			words += 1;
-			i++;
+			++words;
+			++i;
 		}
 		else
-			i++;
+			++i;
 	}
 
 	return (words);
+}
+
+/**
+ * store_word - store string in memory
+ * @str: word
+ * @ptr: starting memory address
+ * Return: pointer to the string
+ */
+char *store_word(char *str)
+{
 }
 
 /**
@@ -49,14 +60,15 @@ int num_words(char *str)
 char **strtow(char *str)
 {
 	char **split;
-	int i, j = 0, temp = 0, size = 0, words = num_words(str);
+	int i, j = 0, temp = 0, size = 0, num_words = count_words(str);
 
-	if (words == 0)
+	if (num_words == 0)
 		return (NULL);
-	split = (char **)malloc(sizeof(char *) * (words + 1));
+
+	split = (char **)malloc(sizeof(char *) * (num_words + 1));
 	if (split != NULL)
 	{
-		for (i = 0; i <= length(str) && words; i++)
+		for (i = 0; i <= length(str) && num_words; i++)
 		{
 			if ((str[i] != ' ') && (str[i] != '\0'))
 				size++;
@@ -84,7 +96,7 @@ char **strtow(char *str)
 				}
 			}
 		}
-		split[words] = NULL;
+		split[num_words] = NULL;
 		return (split);
 	}
 	else
