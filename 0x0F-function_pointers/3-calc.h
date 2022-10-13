@@ -13,7 +13,7 @@ int op_mod(int a, int b);
  */
 typedef struct op
 {
-	char *op;
-	int (*f)(int, int);
+        char *op;
+        int (*f)(int, int);
 } op_t;
 #endif
