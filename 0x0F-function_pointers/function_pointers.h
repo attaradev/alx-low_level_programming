@@ -1,9 +1,3 @@
-/**
- * File: function_pointers.h
- * Author: Mike Attara
- * Desc: Header file containing function declarations
- */
-
 #ifndef HEADER_FILE
 #define HEADER_FILE
 #include <stddef.h>
