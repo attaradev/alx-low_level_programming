@@ -16,4 +16,4 @@ typedef struct op
         char *op;
         int (*f)(int, int);
 } op_t;
-#endif
+#endif /* CALC_H */
