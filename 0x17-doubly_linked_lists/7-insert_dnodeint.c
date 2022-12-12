@@ -5,7 +5,7 @@
  * @h: pointer to head of list
  * @idx: index of the list where the new node should be added
  * @n: data of the new node
- * 
+ *
  * Return:  the address of the new node, or NULL if it failed
  */
 
